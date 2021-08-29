@@ -34,7 +34,7 @@ pip install postgres
 pip install Flask
 pip install Flask-Migrate
 ```
-> **Note** - If we do not mention the specific version of a package, then the default latest stable package will be installed. 
+> **Note** - If we do not mention the specific version of a package, then the default latest stable package will be installed.
 
 ### 2. Frontend Dependencies
 You must have the **HTML**, **CSS**, and **Javascript** with [Bootstrap 3](https://getbootstrap.com/docs/3.4/customize/) for our website's frontend. Bootstrap can only be installed by Node Package Manager (NPM). Therefore, if not already, download and install the [Node.js](https://nodejs.org/en/download/). Windows users must run the executable as an Administrator, and restart the computer after installation. After successfully installing the Node, verify the installation as shown below.
@@ -60,7 +60,7 @@ npm install bootstrap@3
   ├── forms.py *** Your forms
   ├── requirements.txt *** The dependencies we need to install with "pip3 install -r requirements.txt"
   ├── static
-  │   ├── css 
+  │   ├── css
   │   ├── font
   │   ├── ico
   │   ├── img
@@ -83,6 +83,7 @@ Highlight folders:
 * `templates/pages` -- (Already complete.) Defines the pages that are rendered to the site. These templates render views based on data passed into the template’s view, in the controllers defined in `app.py`. These pages successfully represent the data to the user, and are already defined for you.
 * `templates/layouts` -- (Already complete.) Defines the layout that a page can be contained in to define footer and header code for a given page.
 * `templates/forms` -- (Already complete.) Defines the forms used to create new artists, shows, and venues.
+
 * `app.py` -- (Missing functionality.) Defines routes that match the user’s URL, and controllers which handle data and renders views to the user. This is the main file you will be working on to connect to and manipulate the database and render views with data to the user, based on the URL.
 * Models in `app.py` -- (Missing functionality.) Defines the data models that set up the database tables.
 * `config.py` -- (Missing functionality.) Stores configuration variables and instructions, separate from the main application code. This is where you will need to connect to the database.
@@ -139,19 +140,19 @@ Best of luck in your final project! Fyyur depends on you!
 1. **Download the project starter code locally**
 ```
 git clone https://github.com/udacity/FSND.git
-cd FSND/projects/01_fyyur/starter_code 
+cd FSND/projects/01_fyyur/starter_code
 ```
 
 2. **Create an empty repository in your Github account online. To change the remote repository path in your local repository, use the commands below:**
 ```
-git remote -v 
-git remote remove origin 
+git remote -v
+git remote remove origin
 git remote add origin <https://github.com/<USERNAME>/<REPO_NAME>.git>
 git branch -M master
 ```
 Once you have finished editing your code, you can push the local repository to your Github account using the following commands.
 ```
-git add . --all   
+git add . --all
 git commit -m "your comment"
 git push -u origin master
 ```
@@ -179,5 +180,4 @@ python3 app.py
 ```
 
 6. **Verify on the Browser**<br>
-Navigate to project homepage [http://127.0.0.1:5000/](http://127.0.0.1:5000/) or [http://localhost:5000](http://localhost:5000) 
-
+Navigate to project homepage [http://127.0.0.1:5000/](http://127.0.0.1:5000/) or [http://localhost:5000](http://localhost:5000)
