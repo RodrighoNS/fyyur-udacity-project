@@ -1,2 +1,5 @@
 # Pycache files
 *.pyc
+
+# Migrations folder
+/migrations
