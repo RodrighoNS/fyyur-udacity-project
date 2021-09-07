@@ -15,7 +15,8 @@ class Venue(db.Model):
     image_link = db.Column(db.String(500))
     facebook_link = db.Column(db.String(120))
     shows = db.relationship('Show', backref='venue', lazy=True)
-    # TODO: implement any missing fields, as a database migration using Flask-Migrate
+
+    # TODO OK: implement any missing fields, as a database migration using Flask-Migrate
 
 class Artist(db.Model):
     __tablename__ = 'Artist'
@@ -30,7 +31,7 @@ class Artist(db.Model):
     facebook_link = db.Column(db.String(120))
     shows = db.relationship('Show', backref='artist', lazy=True)
 
-    # TODO: implement any missing fields, as a database migration using Flask-Migrate
+    # TODO OK: implement any missing fields, as a database migration using Flask-Migrate
 
 class Show(db.Model):
     __tablename__ = 'Show'
@@ -40,4 +41,4 @@ class Show(db.Model):
     artist_id = db.Column(db.Integer, db.ForeignKey('Artist.id'), nullable=True)
     start_time = db.Column(db.DateTime)
 
-# TODO Implement Show and Artist models, and complete all model relationships and properties, as a database migration.
+# TODO OK: Implement Show and Artist models, and complete all model relationships and properties, as a database migration.
