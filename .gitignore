@@ -3,3 +3,6 @@
 
 # Migrations folder
 /migrations
+
+# VSCode folder
+/.vscode
